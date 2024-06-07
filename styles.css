@@ -1,0 +1,74 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Importing a custom font */
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #001f3f, #1a1a2e); /* Gradient navy blue background */
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive; /* Applying the custom font */
+    font-size: 3em;
+    color: #f0e5de; /* Light aesthetic color for the title */
+    text-shadow: 2px 2px 4px #000000; /* Adding shadow for more depth */
+}
+
+.status {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px; /* Increased gap for better aesthetics */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #f0e5de; /* Light aesthetic color */
+    border: 1px solid #000;
+    font-size: 2em;
+    color: black; /* X and O colors to black */
+    cursor: pointer;
+    border-radius: 50%; /* Rounded cells */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0d4cf; /* Slightly darker color on hover */
+    transform: scale(1.1); /* Adding a slight zoom effect on hover */
+}
+
+.restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #f0e5de; /* Matching aesthetic color */
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.restart-button:hover {
+    background-color: #e0d4cf; /* Slightly darker color on hover */
+    transform: scale(1.1); /* Adding a slight zoom effect on hover */
+}
